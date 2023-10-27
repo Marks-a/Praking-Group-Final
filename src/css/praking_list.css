@@ -1,0 +1,375 @@
+/* Center the main container on the screen */
+/* .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+    background: var(--secondary-background-color);
+    border-color: var(--text-color);
+} */
+
+/* 
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto; 
+    max-width: 300px; 
+    background-color: var(--primary-color); 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.filter-container label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.filter-container select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #333; 
+}
+
+
+.parking-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 auto; 
+    max-width: 800px; 
+    background-color: var(--primary-color);
+}
+
+
+.parking-space {
+    background-color: var(--secondary-background-color); 
+    border: 1px solid var(--border-color); 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.parking-space h2 {
+    font-size: 18px;
+    margin: 0;
+    color: var(--primary-color); 
+}
+
+.parking-space p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: var(--text-color);
+} */
+
+.container2 {
+    display: flex;
+    flex-direction: column; /* To make its children stack vertically */
+    justify-content: center; /* To vertically center the content */
+    align-items: center; /* To horizontally center the content */
+    padding: 20px; /* Adjust this value to control the space around container2 */
+    background-color: rgb(var(--background-color));
+    height: 64vh;
+}
+.parking-list-bar{
+    margin-top: 70px;
+    text-align: center;
+}
+.parking-list {
+    overflow: auto; /* Ensure that the container is scrollable */
+    height: 400px;
+}
+
+  .parking-list::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+  }
+.parking-list::-webkit-scrollbar-track {
+    background-color: rgb(201, 198, 198);
+    border-radius: 6px; /* Round the corners of the scrollbar track */
+  }
+  
+  .parking-list::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--primary-color));
+    border-radius: 6px; /* Round the corners of the thumb */
+  }
+.first-line-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.second-line-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 110px;
+  margin-left: 10px;
+}
+.first-line-info p, svg {
+  margin-right: 20px;
+}
+.info-left {
+  flex: 1;
+  margin-left: 10px;
+}
+.info-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.parking-space {
+    font-weight: bold;
+    font-size: xx-large;
+    width: 1200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(var(--secondary-color));
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.parking-space h2 {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.parking-space p {
+    font-size: 24px;
+}
+
+.status {
+    text-align: right;
+    font-size: 16px;
+}
+
+
+.edit-button,
+.view-button {
+    background: #fc8c0c;
+    color: #fff;
+    border: none;
+    padding: 7px 5px;
+    width: 160px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.edit-button:hover,
+.view-button:hover {
+    background: #eb0000;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .modal-content {
+    border-radius: 5%;
+    text-align: center;
+    margin: 50px auto;
+    width: 40%;
+    background-color: rgb(var(--secondary-color));
+    position:center;
+    border-radius: 5px;
+  }
+  h1 {
+    margin: 0 0 20px;
+    font-weight: bold;
+    color: rgb(var(--primary-color)); 
+    
+  }
+  span {
+    color: #666;
+    display: block;
+    padding: 0 0 5px;
+  }
+  form {
+    padding: 25px;
+    margin: 25px;
+  }
+  input,
+  textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 17px;
+    border: 1px solid rgb(var(--primary-color));
+    border-radius: 25px;
+    outline: none;
+  }
+  #edit-submitButton{
+    background-color: rgb(var(--accept-color));
+  }
+  #edit-submitButton:hover{
+    background-color: rgb(var(--danger-color));
+    cursor: pointer;
+  }
+  #sumbitButton{
+    background-color: rgb(var(--accept-color));
+  }
+  #sumbitButton:hover{
+    background-color: rgb(var(--danger-color));
+    cursor: pointer;
+  }
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  button:hover {
+    background: #2371a0;
+  }
+  label{
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* Notification container */
+  .modal2 {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    
+    background: rgba(0, 0, 0, 0.5);
+    
+  }
+  .modal-content2 {
+    border-radius: 5%;
+    text-align: center;
+    
+    margin: 50px auto;
+    width: 40%;
+    background-color: rgb(var(--background-color));
+    position:center;
+    border-radius: 5px;
+    overflow: auto;
+    border: 1px solid; /* Add 'solid' to define the border style */
+    border-radius: 30px;
+    
+  }
+
+  .close2 {
+    color: #aaa;
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .close2:hover,
+  .close2:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+.display-notification {
+  background-color: rgb(var(--secondary-color));
+  border: 1px solid #999;
+  width: 90%;
+  bottom: 90%;
+  /* left:10px; */
+  margin: 50px auto;
+  height: 40%; /* Set the height */
+  border: 1px solid #999;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow: auto;
+  border: 1px solid; /* Add 'solid' to define the border style */
+    border-radius: 30px;
+  
+}
+.display-contextBox {
+  
+  /* background-color: rgb(var(--secondary-color)); */
+  /* margin: 10px; */
+  margin-bottom: 20px;
+  margin-top:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  
+}
+.display-contextBox h3 {
+  border: 1px;
+  border-radius: 10px;
+  padding: 5px;
+  width: 90%;
+  
+  font-size: 1.2em;
+  background-color:rgb(var(--background-color));
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+  padding: 10px; /* Add padding to create space around each h3 element */
+  margin: 10px 0;
+}
+.display-contextBox h4 {
+  border: 1px;
+  border-radius: 12px;
+  padding: 5px;
+  width: 90%;
+  
+  font-size: 1.2em;
+  background-color:rgb(var(--primary-color));
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  /* margin-bottom: 20px; */
+  padding: 10px; /* Add padding to create space around each h3 element */
+  margin: 10px 0;
+ 
+}
+.display-notification::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+.display-notification::-webkit-scrollbar-track {
+  background-color: rgb(201, 198, 198);
+  border-radius: 6px; /* Round the corners of the scrollbar track */
+}
+
+.display-notification::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--primary-color));
+  border-radius: 6px; /* Round the corners of the thumb */
+}

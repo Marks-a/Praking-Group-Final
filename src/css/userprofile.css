@@ -1,0 +1,235 @@
+.account-container{
+    display: grid;
+    gap: 20px;
+    margin: 0 50px;
+    margin-top: 100px;
+}
+
+.user-info-container{
+    display: grid;
+    grid-template-columns: 0.6fr 0.9fr 0.9fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.user-info-left{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.user-name-and-at{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding-top: 69px;
+    padding-bottom: 69px;
+    border-radius: 10px;
+    background-color: rgb(var(--secondary-color));
+    width: 100%;
+    height: 100%;
+}
+
+.business-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 69px;
+    padding-bottom: 69px;
+    border-radius: 10px;
+    background-color: rgb(var(--secondary-color));
+    width: 100%;
+    height: 100%;
+}
+
+.user-balance-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 69px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(var(--secondary-color));
+    width: 100%;
+}
+
+.user-info-mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.user-account-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(var(--secondary-color));
+}
+
+.user-account-details-input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    margin: 25px 0;
+    width: 175%;
+    font-size: x-large;
+}
+
+.user-account-details-input-phones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.user-account-details-input-email-reg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.user-account-details-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-account-details-input-container label {
+    text-align: left;
+}
+
+.user-bank-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(var(--secondary-color));
+}
+
+.user-bank-details-input{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    margin: 25px 0;
+    width: 175%;
+    font-size: x-large;
+}
+
+.user-bank-details-input textarea {
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.user-info-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.user-settings-title{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--gradient);
+}
+
+.user-account-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: rgb(var(--secondary-color));
+}
+
+.user-account-settings-input{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.user-account-settings-password-confirm{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.user-delete-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(var(--secondary-color));
+}
+.user-delete-account button {
+    background-color: rgb(var(--accent-color));
+    padding: 20px;
+}
+
+.user-account-update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.business-name,
+.user-account-settings,
+.user-balance-container,
+.user-name-and-at,
+.user-account-details:nth-of-type(2),
+.user-info-mid > :nth-child(3) {
+  outline: 2px solid #d86508;
+}
